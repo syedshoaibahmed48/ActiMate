@@ -2,6 +2,8 @@
 
 Actimate is a simple web application designed to help users find and discover random activities to beat boredom and make the most of their free time. Whether you're looking for inspiration or just want a fun and spontaneous way to decide what to do, Actimate has you covered.
 
+**Try it live here:** [https://actimate-smoky.vercel.app/](https://actimate-smoky.vercel.app/)
+
 ## Features
 
 - **Random Activity Suggestions**: Actimate provides you with a random activity suggestion, making it easy to break the monotony of your daily routine.
