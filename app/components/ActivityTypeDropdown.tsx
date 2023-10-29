@@ -27,7 +27,7 @@ export default function ActivityTypeDropdown({activityType, handleSelectActivity
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left mx-2">
       <button onClick={toggleDropdown} type="button"
         className="inline-flex items-center justify-between w-44 py-2 px-2 rounded-md bg-gray-700 text-gray-200 focus:outline-none"
       >

@@ -30,11 +30,11 @@ export default function Page() {
     <div className="container">
 
       <div className="options-container">
-        <button className="btn" onClick={ fetchNewActivity }>Generate New Activity</button>
         <ActivityTypeDropdown
           activityType={activityType}
           handleSelectActivityType={handleSelectActivityType}
         />
+        <button className="btn" onClick={ fetchNewActivity }>Generate New Activity</button>
       </div>
 
       <div className="activity-container">
