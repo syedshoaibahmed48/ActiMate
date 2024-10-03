@@ -2,16 +2,16 @@
 import { useState, useEffect } from 'react';
 import ActivityTypeDropdown from './components/ActivityTypeDropdown'
 import Footer from './components/Footer'
-import { fetchActivity } from './lib/fetchActivity'
+import { fetchActivity } from '@/app/lib/fetchActivityAndTypes'
 
 export default function Page() {
 
   const [activity, SetActivity] = useState('');
-  const [activityType, SetActivityType] = useState('Random');
+  const [selectedActivityType, SetSelectedActivityType] = useState('Random');
 
   const fetchNewActivity = async() => {
     try{
-      const activity = await fetchActivity(activityType);
+      const activity = await fetchActivity(selectedActivityType);
       SetActivity(activity);
     } catch(error){
       console.log("Error fetching data: ",error);
@@ -19,7 +19,7 @@ export default function Page() {
   }
 
   const handleSelectActivityType = (selectedType: string) => {
-    SetActivityType(selectedType);
+    SetSelectedActivityType(selectedType);
   }
 
   useEffect( ()=>{
@@ -31,7 +31,7 @@ export default function Page() {
 
       <div className="options-container">
         <ActivityTypeDropdown
-          activityType={activityType}
+          selectedActivityType={selectedActivityType}
           handleSelectActivityType={handleSelectActivityType}
         />
         <button className="btn" onClick={ fetchNewActivity }>Generate New Activity</button>
