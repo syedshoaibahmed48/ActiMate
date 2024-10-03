@@ -17,5 +17,3 @@ Actimate was built using the following technologies:
 - **Next.js**: A popular React framework that offers a great development experience with server-side rendering and routing.
 
 - **Tailwind CSS**: A highly customizable CSS framework that helps in quickly and easily styling your web application.
-
-- **Bored API**: Actimate relies on the Bored API to fetch random activity suggestions and, when applicable, filtered suggestions based on user preferences.
